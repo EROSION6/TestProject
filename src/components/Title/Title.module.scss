@@ -1,0 +1,16 @@
+.title {
+	margin: 40px 0;
+
+	@media (max-width: 550px) {
+		margin: 20px 0;
+		p {
+			&:nth-child(1) {
+				font-size: 32px !important;
+				margin-bottom: 12px !important;
+			}
+			&:nth-child(2) {
+				font-size: 18px !important;
+			}
+		}
+	}
+}

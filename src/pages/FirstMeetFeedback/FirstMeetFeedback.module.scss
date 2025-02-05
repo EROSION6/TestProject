@@ -1,0 +1,83 @@
+.container {
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	padding: 35px;
+	border-radius: 48px;
+
+	background: rgb(255, 255, 255);
+
+	.logo {
+		width: 175.84px;
+		height: 56px;
+		margin-bottom: 40px;
+	}
+
+	.image {
+		img {
+			width: 100%;
+		}
+	}
+
+	.grade {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		gap: 12px;
+		margin-bottom: 40px;
+		h2 {
+			color: rgb(33, 37, 41);
+			font-family: Inter;
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 28px;
+			letter-spacing: -2%;
+			text-align: center;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.column {
+		margin-top: 32px;
+		h2 {
+			color: rgb(33, 37, 41);
+			font-family: Inter;
+			font-size: 28px;
+			font-weight: 600;
+			line-height: 36px;
+			letter-spacing: -2%;
+			text-align: center;
+		}
+	}
+
+	.overlapEliminator {
+		p {
+			color: rgb(157, 159, 163);
+			font-family: Inter;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 140%;
+			letter-spacing: -2%;
+			text-align: center;
+			margin-top: 40px;
+		}
+	}
+
+	@media (max-width: 768px) {
+		padding: 12px;
+
+		.overlapEliminator {
+			p {
+				margin-top: 20px;
+			}
+		}
+
+		.logo {
+			margin-bottom: 22px;
+		}
+	}
+}

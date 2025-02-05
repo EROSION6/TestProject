@@ -1,0 +1,56 @@
+.container {
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	padding: 35px;
+	border-radius: 48px;
+
+	background: rgb(255, 255, 255);
+
+	.logo {
+		width: 175.84px;
+		height: 56px;
+		margin-bottom: 40px;
+	}
+
+	.title {
+		margin-bottom: 40px;
+		h2 {
+			color: rgb(33, 37, 41);
+			font-size: 48px;
+			font-weight: 600;
+			line-height: 100%;
+			letter-spacing: -4%;
+			text-align: left;
+			margin-bottom: 16px;
+		}
+		p {
+			color: rgb(157, 159, 163);
+			font-family: Inter;
+			font-size: 22px;
+			font-weight: 500;
+			line-height: 28px;
+			letter-spacing: -2%;
+		}
+	}
+
+	@media (max-width: 768px) {
+		padding: 12px;
+
+		.logo {
+			margin-bottom: 22px;
+		}
+
+		.title {
+			h2 {
+				font-size: 32px;
+				line-height: 110%;
+				margin-bottom: 12px;
+			}
+			p {
+				font-size: 18px;
+				width: 100%;
+			}
+		}
+	}
+}

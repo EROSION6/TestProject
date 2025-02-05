@@ -1,0 +1,169 @@
+.missing {
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	padding: 35px;
+	border-radius: 48px;
+
+	background: rgb(255, 255, 255);
+
+	&_logoInfo {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		.image {
+			margin-bottom: 56px;
+			img {
+				width: 100%;
+				height: 254px;
+			}
+
+			p {
+				color: rgb(157, 159, 163);
+				font-family: Inter;
+				font-size: 22px;
+				font-weight: 500;
+				line-height: 28px;
+				letter-spacing: -2%;
+				text-align: center;
+				margin-top: 20px;
+			}
+		}
+	}
+
+	.logo {
+		width: 175.84px;
+		height: 56px;
+		margin-bottom: 40px;
+	}
+
+	.title {
+		margin-bottom: 40px;
+		h2 {
+			color: rgb(33, 37, 41);
+			font-family: Public Sans;
+			font-size: 48px;
+			font-weight: 600;
+			line-height: 100%;
+			letter-spacing: -4%;
+			text-align: center;
+		}
+		p {
+			color: rgb(157, 159, 163);
+			font-family: Inter;
+			font-size: 22px;
+			font-weight: 500;
+			line-height: 28px;
+			letter-spacing: -2%;
+			text-align: center;
+			margin-top: 24px;
+		}
+	}
+
+	&_grade {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		gap: 12px;
+		margin-bottom: 40px;
+		h2 {
+			color: rgb(33, 37, 41);
+			font-family: Inter;
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 28px;
+			letter-spacing: -2%;
+			text-align: center;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&_bottom {
+		text-align: center;
+		margin-top: 24px;
+
+		h4 {
+			color: rgb(33, 37, 41);
+			font-family: Inter;
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 24px;
+			letter-spacing: -2%;
+			text-align: center;
+		}
+
+		p {
+			margin-top: 40px;
+			color: rgb(157, 159, 163);
+			font-family: Inter;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 16px;
+			letter-spacing: -2%;
+			text-align: center;
+		}
+	}
+
+	@media (max-width: 768px) {
+		padding: 12px;
+
+		.logo {
+			margin-bottom: 22px;
+		}
+
+		.title {
+			h2 {
+				font-size: 24px;
+				line-height: 110%;
+			}
+			p {
+				font-size: 12px;
+				line-height: 18px;
+				width: 100%;
+				margin-top: 12px;
+			}
+		}
+
+		.image {
+			margin-bottom: 32px;
+			img {
+				width: 100%;
+				height: 150px;
+			}
+			p {
+				font-size: 12px;
+				line-height: 14px;
+				text-align: center;
+				margin-top: 10px;
+			}
+		}
+
+		&_grade {
+			margin-bottom: 12px;
+			gap: 6px;
+			h3 {
+				font-size: 16px;
+				line-height: 100%;
+				text-align: center;
+			}
+		}
+
+		&_bottom {
+			h4 {
+				font-size: 12px;
+				line-height: 16px;
+			}
+			p {
+				font-size: 12px;
+				line-height: 16px;
+				margin-top: 20px;
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.col {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (max-width: 768px) {
+	.col{
+    gap: 0;
+	}
+	h2 {
+		font-size: 20px;
+		line-height: 140%;
+		margin-bottom: 25px;
+	}
+	h3 {
+		font-size: 16px;
+		line-height: 18px;
+	}
+}
