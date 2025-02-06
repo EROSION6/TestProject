@@ -5,16 +5,18 @@ import s from './Footer.module.scss'
 export const Footer = () => {
 	const footerStyle = {
 		display: 'flex',
-		flexDirection: 'column' as 'column',
+		flexDirection: 'column',
 		alignItems: 'center',
 		justifyContent: 'center',
 		marginTop: '22px',
 	}
 
+
 	const logoStyle = {
 		width: '150px',
 		height: '50px',
 	}
+
 
 	const text1Style = {
 		color: 'rgb(157, 159, 163)',
@@ -22,16 +24,18 @@ export const Footer = () => {
 		fontWeight: 500,
 		lineHeight: '120%',
 		letterSpacing: '-4%',
-		textAlign: 'left' as 'left',
+		textAlign: 'left',
 		margin: '8px 0',
 	}
+
+
 	const text2Style = {
 		color: 'rgb(157, 159, 163)',
 		fontSize: '14px',
 		fontWeight: 400,
 		lineHeight: '24px',
 		letterSpacing: '-2%',
-		textAlign: 'left' as 'left',
+		textAlign: 'left',
 	}
 	return (
 		<Container style={footerStyle}>

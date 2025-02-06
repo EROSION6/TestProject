@@ -1,3 +1,5 @@
+import { Img, Text } from '@react-email/components'
+import grade from '../../assets/grade.svg'
 import logo from '../../assets/Logotype (1).svg'
 import { Column } from '../../components/Column/Column'
 import { Footer } from '../../components/Footer/Footer'
@@ -10,16 +12,15 @@ import s from './FirstMeetFeedback.module.scss'
 export const FirstMeetFeedback = () => {
 	return (
 		<div className={s.container}>
-			<img src={logo} alt='logo' className={s.logo} />
+			<Img src={logo} alt='logo' className={s.logo} />
 			<Title
 				title='How was your first meet?'
-				descr='Hi [User"s First Name]! Share feedback about your firsh call using wellpin'
+				description='Hi [User"s First Name]! Share feedback about your firsh call using wellpin'
 			/>
 
-			{/* grade */}
 			<div className={s.grade}>
 				<h3>How would you rate our service on a 5 point scale?</h3>
-				<img src='/public/Frame 2131329339.jpeg' alt='' />
+				<Img src={grade} alt='grade' />
 			</div>
 
 			<div className={s.column}>
@@ -36,12 +37,12 @@ export const FirstMeetFeedback = () => {
 
 			<div className={s.overlapEliminator}>
 				<MyButton>Explore Wellpin now!</MyButton>
-				<p>
+				<Text>
 					Need help with setup or questions about specific features? Reach out
 					to support@wellpin.io — we’re happy to assist!
 					<br />
 					Thank you for helping us grow and improve! The Wellpin Team
-				</p>
+				</Text>
 			</div>
 			<Footer />
 		</div>

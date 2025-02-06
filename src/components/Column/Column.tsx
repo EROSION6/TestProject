@@ -1,3 +1,4 @@
+import { Img, Text } from '@react-email/components'
 import s from './Column.module.scss'
 
 export type ICol1 = {
@@ -12,6 +13,29 @@ interface ColumnProps {
 }
 
 export const Column = ({ col1, col2, reverse }: ColumnProps) => {
+
+	
+	const titleStyle = {
+		color: 'rgb(33, 37, 41)',
+		fontSize: '20px',
+		fontWeight: 700,
+		lineHeight: '24px',
+		letterSpacing: '-2%',
+		textAlign: ' left',
+		margin: 0,
+	}
+
+
+	const descrStyle = {
+		color: 'rgb(157, 159, 163)',
+		fontSize: '14px',
+		fontWeight: 400,
+		lineHeight: '20px',
+		letterSpacing: '0%',
+		textAlign: ' left',
+		margin: 0,
+	}
+
 	return (
 		<div
 			className={s.column}
@@ -20,11 +44,11 @@ export const Column = ({ col1, col2, reverse }: ColumnProps) => {
 			}}
 		>
 			<div className={s.column_left}>
-				<h4>{col1.title}</h4>
-				<p>{col1.descr}</p>
+				<Text style={titleStyle}>{col1.title}</Text>
+				<Text style={descrStyle}>{col1.descr}</Text>
 			</div>
 			<div className={s.column_right}>
-				<img src={col2} alt='' />
+				<Img src={col2} alt={col1.title} />
 			</div>
 		</div>
 	)

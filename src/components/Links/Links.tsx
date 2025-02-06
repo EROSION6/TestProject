@@ -17,6 +17,7 @@ export const Links = ({ title, links = [] }: LinkProps) => {
 		backgroundColor: 'rgb(255, 255, 255)',
 	}
 
+
 	const titleStyle = {
 		color: 'rgb(0, 0, 0)',
 		fontSize: '36px',
@@ -25,6 +26,7 @@ export const Links = ({ title, links = [] }: LinkProps) => {
 		letterSpacing: ' -2%',
 		marginBottom: '32px',
 	}
+
 
 	const linkTitleStyle = {
 		color: 'rgb(0, 0, 0)',
@@ -35,6 +37,7 @@ export const Links = ({ title, links = [] }: LinkProps) => {
 		margin: 0,
 	}
 
+
 	const linkDescrStyle = {
 		color: 'rgb(157, 159, 163)',
 		fontSize: '22px',
@@ -44,6 +47,7 @@ export const Links = ({ title, links = [] }: LinkProps) => {
 		marginTop: '8px',
 	}
 
+
 	const titleStylePhone = {
 		...titleStyle,
 		fontSize: '20px',
@@ -51,16 +55,20 @@ export const Links = ({ title, links = [] }: LinkProps) => {
 		marginBottom: '16px',
 	}
 
+
 	const linkDescrStylePhone = {
 		...linkDescrStyle,
 		fontSize: '14px',
 	}
+
+
 	const linkTitleStylePhone = {
 		...linkTitleStyle,
 		fontSize: '16px',
 		lineHeight: '18px',
 	}
 
+	
 	return (
 		<Container style={containerStyle}>
 			<Text style={window.innerWidth < 768 ? titleStylePhone : titleStyle}>

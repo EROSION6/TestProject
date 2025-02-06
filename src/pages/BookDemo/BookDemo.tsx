@@ -1,3 +1,4 @@
+import { Img, Text } from '@react-email/components'
 import logo from '../../assets/Logotype (1).svg'
 import { Column } from '../../components/Column/Column'
 import { Footer } from '../../components/Footer/Footer'
@@ -8,13 +9,13 @@ import s from './BookDemo.module.scss'
 export const BookDemo = () => {
 	return (
 		<div className={s.container}>
-			<img src={logo} alt='logo' className={s.logo} />
+			<Img src={logo} alt='logo' className={s.logo} />
 			<Title
 				title='Stop losing leads!'
-				descr='Get a FREE ‘Book a demo’ widget that you can put on your website in 1 minute without coding'
+				description='Get a FREE ‘Book a demo’ widget that you can put on your website in 1 minute without coding'
 			/>
 			<div className={s.image}>
-				<img src='/public/Photo.jpeg' alt='' />
+				<Img src='/public/Photo.jpeg' alt='' />
 			</div>
 
 			<div className={s.column}>
@@ -41,11 +42,11 @@ export const BookDemo = () => {
 
 			<div className={s.bookDemo}>
 				<MyButton>Set up fields</MyButton>
-				<p>
+				<Text>
 					Need help with setup or questions about specific features? Reach out
 					to support@wellpin.io — we’re happy to assist! Thank you for helping
 					us grow and improve! The Wellpin Team
-				</p>
+				</Text>
 			</div>
 			<Footer />
 		</div>

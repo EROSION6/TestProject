@@ -1,9 +1,9 @@
-import { WelcomeSection } from './pages/WelcomeSection/WelcomeSection'
+import { BookDemo } from './pages/BookDemo/BookDemo'
 
 const App = () => {
 	return (
 		<div className='con'>
-			<WelcomeSection />
+			<BookDemo />
 		</div>
 	)
 }

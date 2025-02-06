@@ -1,3 +1,4 @@
+import { Img, Text } from '@react-email/components'
 import logo from '../../assets/Logotype (1).svg'
 import { Column } from '../../components/Column/Column'
 import { Footer } from '../../components/Footer/Footer'
@@ -10,10 +11,10 @@ import s from './MeetingReminder.module.scss'
 export const MeetingReminder = () => {
 	return (
 		<div className={s.container}>
-			<img src={logo} alt='logo' className={s.logo} />
+			<Img src={logo} alt='logo' className={s.logo} />
 			<Title
 				title='Never miss a meeting again! '
-				descr=' Set up your slots to receive meetings exactly when you want'
+				description=' Set up your slots to receive meetings exactly when you want'
 			/>
 
 			<div className={s.column}>
@@ -29,12 +30,12 @@ export const MeetingReminder = () => {
 
 			<div className={s.overlapEliminator}>
 				<MyButton>Setup slots now</MyButton>
-				<p>
+				<Text>
 					Need help with setup or questions about specific features? Reach out
 					to support@wellpin.io — we’re happy to assist!
 					<br />
 					Thank you for helping us grow and improve! The Wellpin Team
-				</p>
+				</Text>
 			</div>
 			<Footer />
 		</div>

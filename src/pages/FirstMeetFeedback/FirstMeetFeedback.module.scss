@@ -10,7 +10,6 @@
 	.logo {
 		width: 175.84px;
 		height: 56px;
-		margin-bottom: 40px;
 	}
 
 	.image {
@@ -25,7 +24,10 @@
 		justify-content: center;
 		flex-direction: column;
 		gap: 12px;
-		margin-bottom: 40px;
+		margin-bottom: 32px;
+		padding: 24px 34px;
+		border-radius: 16px;
+		background: rgb(249, 249, 249);
 		h2 {
 			color: rgb(33, 37, 41);
 			font-family: Inter;
@@ -69,6 +71,20 @@
 
 	@media (max-width: 768px) {
 		padding: 12px;
+
+		.grade {
+			margin-bottom: 22px;
+			gap: 6px;
+			h3 {
+				font-size: 16px;
+				line-height: 100%;
+				text-align: center;
+			}
+		}
+
+		.column{
+			margin-top: 22px;
+		}
 
 		.overlapEliminator {
 			p {

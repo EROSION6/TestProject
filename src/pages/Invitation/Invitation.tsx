@@ -1,3 +1,4 @@
+import { Img } from '@react-email/components'
 import logo from '../../assets/Logotype (1).svg'
 import { Banner } from '../../components/Banner/Banner'
 import { Footer } from '../../components/Footer/Footer'
@@ -11,24 +12,19 @@ export const Invitation = () => {
 	return (
 		<div className={s.invitation}>
 			<div className={s.invitation_logoInfo}>
-				<img src={logo} alt='logo' className={s.logo} />
+				<Img src={logo} alt='logo' className={s.logo} />
 				<Title
 					title='[Name] invites you to Wellpin!'
-					descr='Hi, I"m [name] and I"m inviting you to Wellpin to check my availability and book calls with me easily through this link'
+					description='Hi, I"m [name] and I"m inviting you to Wellpin to check my availability and book calls with me easily through this link'
 				/>
 			</div>
-
 			<Banner
 				title='Pin a meeting with [Name]'
-				logoDescr='Free Scheduling Assistant'
+				logoDescription='Free Scheduling Assistant'
 				link='wellpin.io/artemzhikharev'
 			/>
-
 			<Links title='With Wellpin you can' links={welcomeLinks} />
-
 			<MyButton>Accept the invitation</MyButton>
-
-			{/* footer */}
 			<Footer />
 		</div>
 	)

@@ -1,4 +1,4 @@
-import { Button } from '@react-email/components'
+import { Button, Img } from '@react-email/components'
 import React from 'react'
 import pin from '../../../assets/pin.svg'
 import s from './Button.module.scss'
@@ -22,6 +22,7 @@ export const MyButton = ({ children }: ButtonProps) => {
 		textDecoration: 'none',
 	}
 
+
 	const spanStyle = {
 		color: 'rgb(255, 255, 255)',
 		fontFamily: 'Inter, sans-serif',
@@ -31,15 +32,16 @@ export const MyButton = ({ children }: ButtonProps) => {
 		letterSpacing: '-2%',
 	}
 
+	
 	const imgStyle = {
-		width: '25.6px',
-		height: '25.6px',
+		width: '26px',
+		height: '26px',
 	}
 	return (
 		<Button style={buttonStyle}>
 			<div className={s.btn}>
 				<span style={spanStyle}>{children}</span>
-				<img src={pin} alt='' style={imgStyle} />
+				<Img src={pin} alt='' style={imgStyle} />
 			</div>
 		</Button>
 	)

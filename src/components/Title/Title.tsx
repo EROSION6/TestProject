@@ -3,10 +3,10 @@ import s from './Title.module.scss'
 
 interface TitleProps {
 	title: string
-	descr: string
+	description: string
 }
 
-export const Title = ({ title, descr }: TitleProps) => {
+export const Title = ({ title, description }: TitleProps) => {
 	return (
 		<div className={s.title}>
 			<Text
@@ -31,7 +31,7 @@ export const Title = ({ title, descr }: TitleProps) => {
 					textAlign: 'left',
 				}}
 			>
-				{descr}
+				{description}
 			</Text>
 		</div>
 	)
